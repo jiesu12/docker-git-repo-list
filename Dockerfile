@@ -5,3 +5,5 @@ RUN chmod +x /start.sh
 ENTRYPOINT [ "/start.sh" ]
 
 VOLUME [ "/repos" ]
+
+EXPOSE 8888
