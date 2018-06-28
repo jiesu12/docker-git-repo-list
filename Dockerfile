@@ -1,4 +1,4 @@
-FROM jiesu/alpine-python3:latest
+FROM jiesu/alpine-python3-arm:latest
 
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
