@@ -11,7 +11,7 @@ class TheHandler(BaseHTTPRequestHandler):
         self.end_headers()
    
         message = ""
-        for f in glob.glob('/repos/**/*.git/', recursive=True):
+        for f in glob.glob('/repos/**/*.git', recursive=True):
             message += f
             message += '\n'
 

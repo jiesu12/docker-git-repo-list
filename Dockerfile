@@ -1,8 +1,8 @@
 FROM jiesu/alpine-python3:latest
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
-ENTRYPOINT [ "/start.sh" ]
+COPY start.py /start.py
+RUN chmod +x /start.py
+ENTRYPOINT [ "/start.py" ]
 
 VOLUME [ "/repos" ]
 
