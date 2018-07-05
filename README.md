@@ -1,6 +1,6 @@
 ## Run
 ```
-docker run -d -v /home/jie/tmp:/repos -p 8888:8888 --name git-repo-list jiesu/git-repo-list
+docker run -d -v /path/to/repos:/repos -p 8888:8888 --name git-repo-list jiesu/git-repo-list-arm
 ```
 
 ## REST Call
