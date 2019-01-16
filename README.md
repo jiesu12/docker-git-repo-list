@@ -1,6 +1,11 @@
+## Build
+```
+docker build --build-arg arch=$(dpkg --print-architecture) -t jiesu/git-repo-list:$(dpkg --print-architecture) .
+```
+
 ## Run
 ```
-docker run -d -v /path/to/repos:/repos -p 8888:8888 --name git-repo-list jiesu/git-repo-list-arm
+docker run -d -v /path/to/repos:/repos -p 8888:8888 --name git-repo-list jiesu/git-repo-list:$(dpkg --print-architecture)
 ```
 
 ## REST Call

@@ -1,4 +1,5 @@
-FROM jiesu/alpine-python3:latest
+ARG arch
+FROM jiesu/python:alpine-3.8-${arch}
 
 COPY start.py /start.py
 RUN chmod +x /start.py
