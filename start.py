@@ -15,6 +15,10 @@ class TheHandler(BaseHTTPRequestHandler):
             message += f
             message += '\n'
 
+        for f in glob.glob('/repos/**/*.bin', recursive=True):
+            message += f
+            message += '\n'
+
         self.wfile.write(bytes(message, "utf8"))
         return
  
